@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Sensitive Personal Documents (NEVER COMMIT)
+Personal Doc/
+resume_preview.jpg
+*.pages
+
+# Build outputs
+bin/
+*.class
+
+# Environment and logs
+*.log
+.system_generated/
