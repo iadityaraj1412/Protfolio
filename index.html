@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Raj | Senior Software Engineer & Java Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="dark-theme">
+
+  <!-- Background Ambient Glows -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-accent">AR</span>
+        <span class="brand-text">Aditya<span class="text-gradient">.dev</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="assets/Aditya_Raj_Resume.pdf" target="_blank" class="btn btn-secondary btn-sm">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </a>
+        <button id="openChatNavBtn" class="btn btn-primary btn-sm btn-glow">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><circle cx="12" cy="11" r="1"/></svg>
+          Ask AI
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-dot pulse"></span>
+            <span>Senior Software Engineer &bull; Capgemini</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Aditya Raj</span><br />
+            <span id="typedTitle" class="typing-text">Senior Java & Cloud Engineer</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Results-driven Senior Software Engineer with <strong>2+ years of enterprise experience</strong> designing, maintaining, and scaling mission-critical Java Spring Boot, Google Cloud Platform (GCP), and AppSheet applications. Proven track record of <strong>60x cloud pipeline optimization</strong> and <strong>99%+ system uptime</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <button id="heroChatBtn" class="btn btn-primary btn-lg btn-glow">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Chat with AI Aditya
+            </button>
+            <a href="assets/Aditya_Raj_Resume.pdf" target="_blank" class="btn btn-outline btn-lg">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              Download CV
+            </a>
+            <a href="#projects" class="btn btn-ghost btn-lg">View Work &rarr;</a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://www.linkedin.com/in/iadityaraj1412" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:iadityaraj1412@gmail.com" class="social-link" title="Email">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>iadityaraj1412@gmail.com</span>
+            </a>
+            <a href="tel:+919570119979" class="social-link" title="Phone">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 9570119979</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-card">
+              <div class="profile-image-container">
+                <img src="assets/me.png" alt="Aditya Raj" class="profile-img" />
+                <div class="profile-glow"></div>
+              </div>
+              <div class="profile-badge-overlay">
+                <div class="tech-pill"><span class="icon-code">&lt;/&gt;</span> Java 26 / Spring</div>
+                <div class="tech-pill">☁️ GCP & AppSheet</div>
+              </div>
+            </div>
+
+            <!-- Floating Micro Cards -->
+            <div class="float-card card-top-right">
+              <div class="float-icon">⚡</div>
+              <div>
+                <div class="float-value">60x</div>
+                <div class="float-label">Pipeline Speedup</div>
+              </div>
+            </div>
+
+            <div class="float-card card-bottom-left">
+              <div class="float-icon">🏆</div>
+              <div>
+                <div class="float-value">Champion</div>
+                <div class="float-label">Capgemini Award</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Ribbon -->
+      <div class="container stats-ribbon">
+        <div class="stat-card">
+          <div class="stat-num">2+</div>
+          <div class="stat-desc">Years Enterprise Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">60x</div>
+          <div class="stat-desc">Airflow Pipeline Acceleration</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">7+</div>
+          <div class="stat-desc">Enterprise Java Apps Maintained</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">99%+</div>
+          <div class="stat-desc">Production Uptime Delivered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">500+</div>
+          <div class="stat-desc">LeetCode & GFG Problems Solved</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">200+</div>
+          <div class="stat-desc">Production Incidents Resolved</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Profile</span>
+          <h2 class="section-title">About <span class="text-gradient">Aditya Raj</span></h2>
+          <p class="section-subtitle">A deep dive into my background, engineering philosophy, and real-world impact.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="about-icon-header">
+              <div class="icon-box">💼</div>
+              <h3>Enterprise Engineering</h3>
+            </div>
+            <p>
+              Currently serving as <strong>Senior Software Engineer at Capgemini</strong> in Bengaluru, partnering with tier-one clients such as <strong>APTIV / Versigent</strong>. I build and maintain mission-critical Java Spring Boot microservices, Google AppSheet enterprise workflows, and high-throughput data processing systems.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="about-icon-header">
+              <div class="icon-box">🚀</div>
+              <h3>Cloud & Optimization</h3>
+            </div>
+            <p>
+              Specialized in cloud architectures on <strong>Google Cloud Platform (GCP)</strong>. Successfully refactored and parallelized Apache Airflow DAG logic on Cloud Composer, slashing batch data pipelines <strong>from 90 minutes down to 90 seconds</strong> (60x improvement) without data loss or downtime.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="about-icon-header">
+              <div class="icon-box">🛡️</div>
+              <h3>Reliability & Governance</h3>
+            </div>
+            <p>
+              Resolved <strong>200+ production incidents</strong> with rigorous Root Cause Analysis (RCA) and preventive documentation, driving a <strong>30% decrease in repeat issues</strong>. Spearheaded the migration of legacy SharePoint file transfer jobs to <strong>Microsoft Graph API</strong> ahead of the 2026 legacy deprecation deadline.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="about-icon-header">
+              <div class="icon-box">🎓</div>
+              <h3>Academic & Problem Solving</h3>
+            </div>
+            <p>
+              Graduated with a <strong>B.Tech in Computer Engineering</strong> from <strong>Lovely Professional University (CGPA: 7.79/10)</strong>. Solved over <strong>500+ algorithmic challenges</strong> on LeetCode and GeeksforGeeks, maintaining strong foundations in Data Structures, System Design, and Clean Code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title">Work <span class="text-gradient">Experience</span></h2>
+          <p class="section-subtitle">2+ years delivering scalable enterprise architectures and business-critical solutions.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Role 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker active"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Senior Software Engineer</h3>
+                  <div class="company-sub">
+                    <span class="company-name">Capgemini</span>
+                    <span class="client-badge">Client: APTIV / Versigent</span>
+                  </div>
+                </div>
+                <div class="role-meta">
+                  <span class="badge-date">Jul 2026 – Present</span>
+                  <span class="badge-loc">Bengaluru, Karnataka</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Provide production support and ongoing feature development for <strong>7+ enterprise Java Spring Boot and Google AppSheet applications</strong>, guaranteeing <strong>99%+ uptime</strong> and rapid resolution.</li>
+                <li>Spearheaded migration of legacy SharePoint scheduler jobs to <strong>Microsoft Graph API</strong> ahead of Microsoft's April 2026 legacy auth retirement, hardening system security and protocol compliance.</li>
+                <li>Engineered high-efficiency GCP data pipeline optimizations using <strong>Apache Airflow (Cloud Composer)</strong>, reducing execution runtime <strong>from 90 minutes to 90 seconds (60x speedup)</strong> through parallel DAG task orchestration.</li>
+                <li>Investigated and resolved <strong>200+ production incidents</strong>, implementing automated error-handling routines and preventive documentation that reduced recurring defects by <strong>30%</strong>.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">GCP</span>
+                <span class="tag">Google AppSheet</span>
+                <span class="tag">Apache Airflow</span>
+                <span class="tag">Microsoft Graph API</span>
+                <span class="tag">Cloud Composer</span>
+                <span class="tag">ServiceNow</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Software Engineer</h3>
+                  <div class="company-sub">
+                    <span class="company-name">Capgemini</span>
+                    <span class="client-badge">Client: APTIV</span>
+                  </div>
+                </div>
+                <div class="role-meta">
+                  <span class="badge-date">Oct 2024 – Jun 2026</span>
+                  <span class="badge-loc">Bengaluru, Karnataka</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Engineered enterprise microservices and backend systems using <strong>Java, Spring Boot, REST APIs, and Google AppSheet</strong> to streamline cross-departmental operations.</li>
+                <li>Integrated external REST APIs and third-party webhooks, automating manual data ingestion workflows and eliminating human data entry errors.</li>
+                <li>Participated in peer code reviews, enforced strict unit testing standards, and maintained CI pipelines.</li>
+                <li>Awarded the prestigious <strong>Capgemini 'Champion' recognition</strong> for technical excellence, consistent delivery velocity, and outstanding stakeholder feedback.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Framework</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">Google AppSheet</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">Git</span>
+                <span class="tag">Microservices</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Node.JS Developer Intern</h3>
+                  <div class="company-sub">
+                    <span class="company-name">Celebal Technology</span>
+                  </div>
+                </div>
+                <div class="role-meta">
+                  <span class="badge-date">Jun 2023 – Aug 2023</span>
+                  <span class="badge-loc">Remote</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Developed and tested asynchronous RESTful APIs using <strong>Node.js and Express.js</strong> for a full-stack enterprise web application.</li>
+                <li>Architected MongoDB document schemas with optimized indexing patterns to improve data retrieval performance and storage efficiency.</li>
+                <li>Collaborated in Agile sprints, asynchronous PR code reviews, and API documentation with Postman.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Postman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Hub -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">Skills & <span class="text-gradient">Expertise</span></h2>
+          <p class="section-subtitle">Core technologies, frameworks, and cloud systems I work with daily.</p>
+        </div>
+
+        <div class="skills-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="backend">Backend & Java</button>
+          <button class="filter-btn" data-filter="cloud">Cloud & Low-Code</button>
+          <button class="filter-btn" data-filter="database">Databases</button>
+          <button class="filter-btn" data-filter="frontend">Frontend & Tools</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Backend & Java -->
+          <div class="skill-card glass-panel" data-category="backend">
+            <div class="skill-icon">☕</div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4>Java (8 - 26)</h4>
+                <span class="skill-pct">Expert</span>
+              </div>
+              <p>Core Java, OOP, Collections, Concurrency, JVM Internals, Streams</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="backend">
+            <div class="skill-icon">🍃</div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4>Spring Boot & Framework</h4>
+                <span class="skill-pct">Advanced</span>
+              </div>
+              <p>Spring MVC, Data JPA, REST APIs, Microservices, Security, Actuator</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="cloud">
+            <div class="skill-icon">☁️</div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4>Google Cloud Platform (GCP)</h4>
+                <span class="skill-pct">Advanced</span>
+              </div>
+              <p>Cloud Composer, BigQuery, IAM, Cloud Storage, Compute, Cloud Functions</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="cloud">
+            <div class="skill-icon">📱</div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4>Google AppSheet</h4>
+                <span class="skill-pct">Advanced</span>
+              </div>
+              <p>Enterprise low-code workflows, custom actions, automations, webhook triggers</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="cloud">
+            <div class="skill-icon">🌪️</div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4>Apache Airflow</h4>
+                <span class="skill-pct">Advanced</span>
+              </div>
+              <p>DAG authoring, task parallelisation, 60x runtime optimization, monitoring</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="database">
+            <div class="skill-icon">🍃</div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4>MongoDB</h4>
+                <span class="skill-pct">Proficient</span>
+              </div>
+              <p>Document modeling, aggregation pipelines, indexing, CRUD persistence</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="database">
+            <div class="skill-icon">🗄️</div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4>SQL Server & Schema Design</h4>
+                <span class="skill-pct">Advanced</span>
+              </div>
+              <p>Complex queries, indexing, stored procedures, schema normalization</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="backend">
+            <div class="skill-icon">🟢</div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4>Node.js & Express.js</h4>
+                <span class="skill-pct">Proficient</span>
+              </div>
+              <p>Asynchronous APIs, middleware, authentication, event loops</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="frontend">
+            <div class="skill-icon">⚛️</div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4>React.js & Frontend</h4>
+                <span class="skill-pct">Certified</span>
+              </div>
+              <p>Capgemini Certified Java Full Stack (React), HTML5, CSS3, JavaScript</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="frontend">
+            <div class="skill-icon">🛠️</div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4>Tools & DevOps</h4>
+                <span class="skill-pct">Advanced</span>
+              </div>
+              <p>Git, Postman, ServiceNow, Eclipse, VS Code, CI/CD, Microsoft Graph API</p>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Engineering <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">Real-world applications showcasing full-stack development and system design.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card glass-panel">
+            <div class="project-header">
+              <div class="project-category">Java Desktop Application</div>
+              <div class="project-badge">Core Java & Database</div>
+            </div>
+            <h3 class="project-title">Electricity Billing System</h3>
+            <p class="project-desc">
+              A comprehensive desktop application designed to streamline utility billing. Handles consumer records, meter reading cycles, dynamic tariff tiers, and automated invoice calculations with full persistence.
+            </p>
+            <div class="project-features">
+              <div class="feature-item">✓ Java Swing GUI with intuitive workflow</div>
+              <div class="feature-item">✓ MongoDB persistence with complete CRUD capabilities</div>
+              <div class="feature-item">✓ Automated calculation engine preventing manual calculation errors</div>
+            </div>
+            <div class="project-footer">
+              <div class="tech-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Swing GUI</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">JDBC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card glass-panel">
+            <div class="project-header">
+              <div class="project-category">Full-Stack Web App</div>
+              <div class="project-badge">Node.js Ecosystem</div>
+            </div>
+            <h3 class="project-title">Employee Management Website</h3>
+            <p class="project-desc">
+              An enterprise full-stack web application for organizational resource management. Provides role-based employee administration, department tracking, and dynamic record querying.
+            </p>
+            <div class="project-features">
+              <div class="feature-item">✓ RESTful API architecture with Express.js</div>
+              <div class="feature-item">✓ Responsive UI built with modern HTML5, CSS3, and JavaScript</div>
+              <div class="feature-item">✓ Scalable document storage schema on MongoDB</div>
+            </div>
+            <div class="project-footer">
+              <div class="tech-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">HTML5 / CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card glass-panel">
+            <div class="project-header">
+              <div class="project-category">Cloud Engineering</div>
+              <div class="project-badge">60x Optimization</div>
+            </div>
+            <h3 class="project-title">Cloud Data Pipeline Optimizer</h3>
+            <p class="project-desc">
+              High-impact enterprise data engineering initiative on Google Cloud Platform. Refactored monolithic batch ETL tasks into an asynchronous, parallelized Apache Airflow DAG topology on Cloud Composer.
+            </p>
+            <div class="project-features">
+              <div class="feature-item">✓ Slashed end-to-end processing time from 90 mins to 90 seconds</div>
+              <div class="feature-item">✓ BigQuery query tuning and partition pruning</div>
+              <div class="feature-item">✓ Zero downtime transition on live enterprise pipelines</div>
+            </div>
+            <div class="project-footer">
+              <div class="tech-tags">
+                <span class="tag">GCP</span>
+                <span class="tag">Cloud Composer</span>
+                <span class="tag">Apache Airflow</span>
+                <span class="tag">BigQuery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certs-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Certifications & <span class="text-gradient">Recognitions</span></h2>
+          <p class="section-subtitle">Verified professional credentials across Cloud, AI, and Full-Stack development.</p>
+        </div>
+
+        <div class="certs-grid">
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-wrap capgemini">☕</div>
+            <div class="cert-body">
+              <span class="cert-issuer">Capgemini Internal</span>
+              <h3 class="cert-name">Java Full Stack (React) Certified</h3>
+              <p class="cert-date">Certified May 2025</p>
+              <div class="cert-tags">
+                <span>Java</span> &bull; <span>Spring Boot</span> &bull; <span>React</span> &bull; <span>Microservices</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-wrap azure">🤖</div>
+            <div class="cert-body">
+              <span class="cert-issuer">Microsoft</span>
+              <h3 class="cert-name">Azure AI Fundamentals (AI-900)</h3>
+              <p class="cert-date">Certified Credential</p>
+              <div class="cert-tags">
+                <span>Machine Learning</span> &bull; <span>Computer Vision</span> &bull; <span>NLP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-wrap azure">☁️</div>
+            <div class="cert-body">
+              <span class="cert-issuer">Microsoft</span>
+              <h3 class="cert-name">Azure Fundamentals (AZ-900)</h3>
+              <p class="cert-date">Certified Credential</p>
+              <div class="cert-tags">
+                <span>Cloud Concepts</span> &bull; <span>Security</span> &bull; <span>Governance</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-wrap aws">🟧</div>
+            <div class="cert-body">
+              <span class="cert-issuer">Amazon Web Services</span>
+              <h3 class="cert-name">AWS Certified Cloud Practitioner</h3>
+              <p class="cert-date">Certified Credential</p>
+              <div class="cert-tags">
+                <span>AWS Cloud</span> &bull; <span>IAM</span> &bull; <span>Infrastructure</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel award-card">
+            <div class="cert-icon-wrap trophy">🏆</div>
+            <div class="cert-body">
+              <span class="cert-issuer">Capgemini Recognition</span>
+              <h3 class="cert-name">Capgemini 'Champion' Award</h3>
+              <p class="cert-date">Client: APTIV</p>
+              <p class="cert-extra">Recognized for technical excellence, consistent delivery velocity, and outstanding stakeholder feedback.</p>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel dsa-card">
+            <div class="cert-icon-wrap dsa">🧠</div>
+            <div class="cert-body">
+              <span class="cert-issuer">Algorithmic Problem Solving</span>
+              <h3 class="cert-name">500+ LeetCode & GFG Solved</h3>
+              <p class="cert-date">300+ LeetCode &bull; 200+ GeeksforGeeks</p>
+              <p class="cert-extra">Demonstrated mastery in Data Structures, Trees, Graphs, Dynamic Programming, and algorithmic optimization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section edu-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academics</span>
+          <h2 class="section-title">Education & <span class="text-gradient">Qualifications</span></h2>
+        </div>
+
+        <div class="edu-card glass-panel">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-details">
+            <div class="edu-top">
+              <div>
+                <h3 class="degree-title">Bachelor of Technology (B.Tech) in Computer Engineering</h3>
+                <div class="institution">Lovely Professional University (LPU), Phagwara, Punjab</div>
+              </div>
+              <div class="edu-score">
+                <span class="score-label">CGPA</span>
+                <span class="score-val">7.79 / 10</span>
+              </div>
+            </div>
+            <div class="edu-period">2020 – 2024 &bull; Full-time</div>
+            <p class="edu-desc">
+              Focused on core computer science foundations: Data Structures & Algorithms, Object-Oriented Analysis & Design, Database Management Systems, Cloud Computing, and Operating Systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Viewer Section -->
+    <section id="resume-section" class="section resume-section">
+      <div class="container">
+        <div class="resume-cta-box glass-panel">
+          <div class="resume-cta-content">
+            <span class="section-tag">Official Resume</span>
+            <h2>Looking for the complete credentials?</h2>
+            <p>Download the official verified resume of Aditya Raj covering all enterprise achievements, certifications, and project records.</p>
+            <div class="resume-btn-row">
+              <a href="assets/Aditya_Raj_Resume.pdf" target="_blank" class="btn btn-primary btn-lg btn-glow">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download PDF Resume
+              </a>
+              <button id="previewResumeBtn" class="btn btn-outline btn-lg">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                Preview Resume
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+          <p class="section-subtitle">Interested in discussing opportunities, tech architecture, or cloud pipelines? Reach out directly!</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-panel glass-panel">
+            <h3>Direct Contact Channels</h3>
+            <p>Feel free to reach out via email, phone, or connect on professional networks.</p>
+
+            <div class="contact-list">
+              <a href="mailto:iadityaraj1412@gmail.com" class="contact-item">
+                <div class="c-icon">📧</div>
+                <div>
+                  <div class="c-label">Email</div>
+                  <div class="c-val">iadityaraj1412@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="tel:+919570119979" class="contact-item">
+                <div class="c-icon">📱</div>
+                <div>
+                  <div class="c-label">Phone</div>
+                  <div class="c-val">+91 9570119979</div>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/iadityaraj1412" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="c-icon">💼</div>
+                <div>
+                  <div class="c-label">LinkedIn</div>
+                  <div class="c-val">linkedin.com/in/iadityaraj1412</div>
+                </div>
+              </a>
+
+              <div class="contact-item">
+                <div class="c-icon">📍</div>
+                <div>
+                  <div class="c-label">Location</div>
+                  <div class="c-val">Bengaluru, Karnataka, India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-panel glass-panel">
+            <h3>Send a Message</h3>
+            <form id="contactForm" onsubmit="event.preventDefault(); window.handleContactSubmit();">
+              <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" required placeholder="e.g. Recruiter / Hiring Manager" />
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Your Email</label>
+                <input type="email" id="contactEmail" required placeholder="name@company.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="contactMsg">Message / Opportunity</label>
+                <textarea id="contactMsg" rows="4" required placeholder="Hi Aditya, we'd love to discuss a Senior Software Engineer role with you..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-glow" style="width: 100%">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message
+              </button>
+              <div id="contactStatus" class="contact-status-msg"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p>&copy; 2026 <strong>Aditya Raj</strong> &bull; Senior Software Engineer. Built in pure Java & modern web technologies.</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.linkedin.com/in/iadityaraj1412" target="_blank">LinkedIn</a> &bull;
+        <a href="mailto:iadityaraj1412@gmail.com">Email</a> &bull;
+        <a href="assets/Aditya_Raj_Resume.pdf" target="_blank">Resume</a> &bull;
+        <a href="#hero">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Resume Preview Modal -->
+  <div id="resumeModal" class="modal-backdrop">
+    <div class="modal-box glass-panel">
+      <div class="modal-header">
+        <div class="modal-title">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          Aditya_Raj_Resume.pdf
+        </div>
+        <div class="modal-actions">
+          <a href="assets/Aditya_Raj_Resume.pdf" download="Aditya_Raj_Resume.pdf" class="btn btn-sm btn-primary">Download</a>
+          <button id="closeResumeModal" class="btn-close">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe src="assets/Aditya_Raj_Resume.pdf" class="pdf-iframe" title="Aditya Raj Resume"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING AI CHATBOT WIDGET -->
+  <div id="aiChatWidget" class="ai-widget-container">
+    <!-- Floating Trigger Button -->
+    <button id="aiTriggerBtn" class="ai-trigger-btn" aria-label="Open AI Chat">
+      <div class="ai-trigger-icon">
+        <span class="ai-avatar-pulse"></span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="12" y1="7" x2="12" y2="13"/></svg>
+      </div>
+      <span class="ai-trigger-text">Ask Aditya AI</span>
+      <span class="ai-unread-badge" id="aiUnreadBadge">1</span>
+    </button>
+
+    <!-- Chat Window Drawer -->
+    <div id="aiChatDrawer" class="ai-chat-drawer glass-panel">
+      <!-- Chat Header -->
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar-wrap">
+            <img src="assets/photo.jpg" alt="Aditya AI" class="chat-avatar-img" onerror="this.src='assets/me.png'" />
+            <span class="online-indicator"></span>
+          </div>
+          <div>
+            <div class="chat-title-row">
+              <h3 class="chat-title">Aditya AI</h3>
+              <span class="chat-badge-ai">Java Engine</span>
+            </div>
+            <p class="chat-subtitle">Trained on Aditya's resume & achievements</p>
+          </div>
+        </div>
+
+        <div class="chat-header-controls">
+          <button id="ttsToggleBtn" class="chat-ctrl-btn" title="Toggle Voice / Read Aloud">
+            <svg class="icon" id="ttsIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+          </button>
+          <button id="clearChatBtn" class="chat-ctrl-btn" title="Reset Chat">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+          </button>
+          <button id="closeChatBtn" class="chat-ctrl-btn" title="Close Chat">&times;</button>
+        </div>
+      </div>
+
+      <!-- Quick Suggested Prompts Bar -->
+      <div class="chat-prompts-bar" id="chatPromptsBar">
+        <span class="prompts-label">Suggestions:</span>
+        <button class="chip-btn" data-query="Tell me about your experience at Capgemini">Capgemini Experience</button>
+        <button class="chip-btn" data-query="How did you achieve a 60x pipeline speedup?">60x Airflow Optimization</button>
+        <button class="chip-btn" data-query="What are your top technical skills?">Technical Skills</button>
+        <button class="chip-btn" data-query="Can I see your resume and LinkedIn?">Resume & LinkedIn</button>
+        <button class="chip-btn" data-query="What certifications do you hold?">Certifications</button>
+        <button class="chip-btn" data-query="Where did you go to college?">Education</button>
+        <button class="chip-btn" data-query="How can I contact or hire you?">Contact / Hire</button>
+      </div>
+
+      <!-- Message Stream -->
+      <div class="chat-messages" id="chatMessages">
+        <!-- Messages will be dynamically rendered here -->
+      </div>
+
+      <!-- Typing Indicator -->
+      <div class="chat-typing-row" id="chatTypingRow" style="display: none;">
+        <div class="typing-bubble">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <span class="typing-label">Aditya AI is analyzing...</span>
+      </div>
+
+      <!-- Input Bar -->
+      <div class="chat-input-area">
+        <form id="chatForm" onsubmit="event.preventDefault(); window.sendChatMessage();">
+          <div class="input-container">
+            <input
+              type="text"
+              id="chatInput"
+              placeholder="Ask anything about Aditya's experience, skills, projects..."
+              autocomplete="off"
+            />
+            <button type="submit" id="chatSendBtn" class="btn-send" aria-label="Send message">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
